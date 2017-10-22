@@ -1,0 +1,28 @@
+<div id="doubleForm">
+<form action="login.php" method="POST">
+<div id="inputBox">
+<h2>Log in!</h2>
+<?php if(htmlspecialchars($_GET["e"]) === "empty"){echo "<p id='error'>A field was not entered.</p>";} 
+if(htmlspecialchars($_GET["e"]) === "error"){echo "<p id='error'>Incorrect password/username. Try again.</p>";}
+?>
+
+Username: <input id="inputLogin" type="text" name="username" placeholder="Username..." /><br>
+Password: <input id="inputLogin" type="password" name="password" placeholder="Password..." /><br>
+<button id="submitButton" name="submitButton" type="submit">Log In</button>
+</form>
+
+<form action="signup.php" method="POST">
+<h2>Sign up!</h2>
+<?php if(htmlspecialchars($_GET["e"]) === "emptyS"){echo "<p id='error'>A field was not entered.</p>";} 
+if(htmlspecialchars($_GET["e"]) === "error"){echo "<p id='error'>Incorrect password/username. Try again.</p>";}
+if(htmlspecialchars($_GET["e"]) === "password too short"){echo "<p id='error'>Password must be longer than 4 characters.</p>";}
+if(htmlspecialchars($_GET["e"]) === "invalid email"){echo "<p id='error'>Please enter a valid email</p>";}
+if(htmlspecialchars($_GET["e"]) === "invalid uid"){echo "<p id='error'>Username can only contain letters, numbers, and underscore.</p>";}
+if(htmlspecialchars($_GET["e"]) === "uid taken"){echo "<p id='error'>Username or email is already in use.</p>";}
+?>
+
+Username: <input id="inputLogin" type="text" name="username" placeholder="Username..." /><br>
+Email: &nbsp &nbsp &nbsp &nbsp &nbsp<input id="inputLogin" type="text" name="email" placeholder="Email..." /><br>
+Password: <input id="inputLogin" type="password" name="password" placeholder="Password..." /><br>
+<button id="submitButton" name="submitButton" type="submit">Sign Up</button>
+</div>

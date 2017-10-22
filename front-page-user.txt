@@ -1,0 +1,5 @@
+
+<div id="inputBox">
+<h2> Your Posts </h2>
+<iframe src="userposts.php" frameborder="0" style="height: 269px;"></iframe>
+</div>

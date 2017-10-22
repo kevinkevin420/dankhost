@@ -1,0 +1,12 @@
+<?php
+session_start();
+session_unset();
+session_destroy();
+?>
+<html>
+    <body>
+        <script>
+        window.location.replace('/index.php');
+        </script>
+    </body>
+</html>

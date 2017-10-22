@@ -1,0 +1,57 @@
+#inputBox {
+    background-color: lightgray;
+    padding: 60px;
+    border: 1px solid black;
+    display: inline-block;
+}
+#inputLogin {
+    padding: 6px;
+    width: 150px;
+}
+#inputLogin:focus {
+    border: 1px solid black;
+    padding: 7px;
+}
+#submitButton {
+    width: 240px;
+    height: 30px;
+    background-color: lightgrey;
+    border: 1px solid darkgrey;
+}
+#submitButton:hover {
+    cursor: pointer;
+}
+#submitButton:active {
+    border: 1px solid black;
+}
+#error {
+    color: red;
+    padding: none;
+    margin: none;
+}
+#success {
+    color: green;
+}
+#form {
+    float: center;
+    text-align: center;
+    width: 500px;
+}
+#success {
+    color: green;
+}
+#error {
+    color: red;
+}
+#footer {
+    font-size: 10px;
+}
+#links {
+    color: darkgreen;
+    text-decoration: underline;
+}
+#links:hover{
+  color: darkgreen;
+  text-decoration: none;
+}
+body {font-family: 'Roboto', sans-serif;}

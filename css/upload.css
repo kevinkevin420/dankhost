@@ -1,0 +1,118 @@
+@keyframes grow {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+    3% {
+      display: block;
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  
+  body {font-family: 'Roboto', sans-serif;}
+  
+  #userLight {-webkit-filter: invert(0%); filter: invert(0%); width: 30px; length: 30px;}
+  #userDark {-webkit-filter: invert(100%); filter: invert(100%);width: 30px;length: 30px;}
+  #userDark:hover{cursor: pointer;}
+  #userLight:hover{cursor: pointer;}
+  
+  #sidebarDiv {
+      float: left;
+      text-align: left;
+      background-color: lightgrey;
+      width: 100px;   
+      display: none;
+      animation: grow 1s ease-in-out;
+      margin: 5px;
+      height: 560px;
+      border: 1px solid black;
+  }
+  #showImg {
+      width: 30px;
+      length: 30px;
+      animation: grow .6s ease-in-out;
+  }
+  #showImg:hover {
+      cursor: pointer;
+  }
+  #hideImg {
+      width: 30px;
+      length: 30px;
+      animation: grow .6s ease-in-out;
+  }
+  #hideImg:hover {
+      cursor: pointer;
+  }
+  
+  #favoriteIcon {
+      float: right;
+      width: 40px;
+      length: 40px;
+  }
+  #sidebarLink {
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+  }
+  #sidebarLink:hover {
+      color: darkgray;
+      background-color: grey;
+  }
+  #sidebarLink:active {
+      color: red;
+  }
+  #mainBox {
+      margin: 10px;
+      padding: 5px;
+  }
+  #inputBox {
+      background-color: lightgray;
+      float: left;
+      padding: 20px;
+      border: 1px solid black;
+  }
+  #inputLogin {
+      padding: 6px;
+      width: 150px;
+  }
+  #inputLogin:focus {
+      border: 1px solid black;
+      padding: 7px;
+  }
+  #submitButton {
+      width: 240px;
+      height: 30px;
+      background-color: lightgrey;
+      border: 1px solid darkgrey;
+  }
+  #submitButton:hover {
+      cursor: pointer;
+  }
+  #submitButton:active {
+      border: 1px solid black;
+  }
+  #error {
+      color: red;
+      padding: none;
+      margin: none;
+  }
+  #success {
+      color: green;
+  }
+  #links {
+      color: darkgreen;
+      text-decoration: none;
+  }
+  #favoriteIcon {
+      width: 40px;
+      height: 40px;
+  }
+  #favoriteIcon:hover {
+      cursor: pointer;
+}
